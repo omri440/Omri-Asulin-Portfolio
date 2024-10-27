@@ -1,18 +1,18 @@
 <ul>
     <li class="home-button">
-        <a href="/home">
+        <a (click)="scrollToSection('home')" [routerLink]="[]" fragment="home" class="anchor-link" >
             <mat-icon>home</mat-icon>
             Home
         </a>
     </li>
     <li>
-        <a href="/about">
+        <a (click)="scrollToSection('about')" [routerLink]="[]" fragment="about" class="anchor-link" >
             <mat-icon> person_pin</mat-icon>
             About
         </a>
     </li>
     <li>
-        <a href="/resume">
+        <a (click)="scrollToSection('resume')" [routerLink]="[]" fragment="resume" class="anchor-link" >
             <mat-icon>assignment</mat-icon>
             Resume
         </a>

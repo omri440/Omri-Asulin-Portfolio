@@ -57,7 +57,7 @@
 }
 
 .menu-btn-container {
-    display: none;
+    display: block;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -65,9 +65,15 @@
 }
 
 /* Hide header and fix button on the left for screens less than 991px */
+@media (min-width: 991px) {
+    .menu-btn-container {
+        display: none; /* Hide button on larger screens */
+    }
+}
 @media (max-width: 991px) {
     .app-header {
         transform: translateX(-100%);
+        z-index: 1000;
     }
 
     .menu-btn-container {

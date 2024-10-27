@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isMenuVisible: boolean = false;
+   public isMenuVisible: boolean = false;
 
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;

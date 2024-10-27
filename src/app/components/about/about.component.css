@@ -1,0 +1,28 @@
+.main-row {
+    display: inline-flex;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    align-items: center; /* Vertically centers items */
+}
+
+.img-container {
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center;
+}
+
+.content {
+    flex: 1; /* Allows the content to take up remaining space */
+}
+
+.spertor {
+    width: 75px;
+    height: 10px;
+    border-color: #149ddd;
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
