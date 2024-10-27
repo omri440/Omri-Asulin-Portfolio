@@ -1,0 +1,17 @@
+a {
+    color: inherit; /* Keeps the text color the same as the parent element */
+    text-decoration: none; /* Removes the underline */
+  }
+
+  ul {
+    
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Optional: Removes the default padding */
+    margin: 0; /* Optional: Removes default margin */
+  }
+  li{
+    width: 100%;
+    height: 50px;
+    padding: 5%;
+  }
+  
