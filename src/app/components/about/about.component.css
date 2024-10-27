@@ -1,4 +1,4 @@
-.main-row {
+.row {
     display: inline-flex;
     flex-wrap: wrap; /* Ensures items wrap on smaller screens */
     align-items: center; /* Vertically centers items */

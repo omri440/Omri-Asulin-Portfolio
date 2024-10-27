@@ -1,22 +1,23 @@
 <section class="about">
     <div class="container">
-        <h2>
-            About
-        </h2>
+        <h2>About</h2>
         <mat-divider class="spertor"></mat-divider>
-        <div class="row main-row">
-            <div class="col-lg-3 col-mg-12">
-                <div class="img-container col-lg-3">
-                    <img src="https://picsum.photos/400/400" alt="my-photo">
+        <div class="row">
+            <!-- Image Column (3 columns on large screens, full width on small screens) -->
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="img-container">
+                    <img src="https://picsum.photos/400/400" alt="my-photo" class="img-fluid">
                 </div>
             </div>
-            <div class="col-lg-9 col-md-12">
+            <!-- Content Column (9 columns on large screens, full width on small screens) -->
+            <div class="col-lg-9 col-md-8 col-12">
                 <div class="content">
-                    <h3> About me</h3>
+                    <h3>About me</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste ad incidunt culpa sunt placeat!</p>
                     <div class="about-list">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
+                            <!-- List Column (half width on large screens, full width on smaller screens) -->
+                            <div class="col-lg-6 col-md-12 col-12">
                                 <ul>
                                     <li><i><mat-icon>chevron_right</mat-icon></i></li>
                                     <li><i><mat-icon>chevron_right</mat-icon></i></li>
@@ -30,5 +31,4 @@
             </div>
         </div>
     </div>
-
 </section>
