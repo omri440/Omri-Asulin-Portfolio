@@ -49,3 +49,11 @@ color-mix(in srgb, var(--default-color), transparent 20%);
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+@media (max-width: 991px) {
+    .resume {
+        z-index: 1500;
+        transform: translateX(-25%);
+        width: calc(90vw ); /* Extend width to overlap header */
+    }
+}

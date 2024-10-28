@@ -1,0 +1,102 @@
+.spertor {
+    width: 75px;
+    height: 10px;
+    border-color: #149ddd;
+    margin-left: 5px;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.horizontal-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+.horizontal-list li {
+    padding: 10px;
+}
+
+.bi-zoom-in::before {
+    content: "\f62c";
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio-item .portfolio-content{
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .portfolio-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for the overlay */
+    opacity: 0; /* Initial opacity for transition effect */
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-content:hover .portfolio-info {
+    opacity: 1; /* Fade in on hover */
+  }
+
+  .portfolio-filters {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .portfolio-filters li {
+    flex: 1 1 33.3%;
+    text-align: center;
+  }
+
+  .portfolio-item {
+    display: none; /* Hide all items initially */
+  }
+  
+  .portfolio-item.show {
+    display: block; /* Show items with the 'show' class */
+  }
+  
+  
