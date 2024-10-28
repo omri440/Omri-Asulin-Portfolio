@@ -1,0 +1,50 @@
+.skills .progress-bar-wrap .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    /* background-color: #149ddd; */
+}
+
+.spertor {
+    width: 75px;
+    height: 10px;
+    border-color: #149ddd;
+    margin-left: 5px;
+}
+
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #0d6efd;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.progress, .progress-stacked{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    background-color:transparent;
+}
+
+ i{
+    float: right;
+    font-style: normal;
+}
+
+.skill-wrap{
+    padding-top: 16px;
+}

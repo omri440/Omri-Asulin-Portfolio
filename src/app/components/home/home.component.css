@@ -7,3 +7,20 @@ main{
     width: 100vh;
     height: 100vh;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.marg-left{
+    position: relative;
+    left: 16px;
+}

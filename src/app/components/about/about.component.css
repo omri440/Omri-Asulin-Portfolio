@@ -26,3 +26,17 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+.about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+.about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+}

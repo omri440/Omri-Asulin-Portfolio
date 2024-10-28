@@ -16,7 +16,7 @@ li {
   height: 35px;
   padding: 15%;
   margin: 4px;
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  transition: background-color 0.5s ease; /* Smooth background transition */
 }
 
 li a {
@@ -27,5 +27,6 @@ li a {
 /* Change background on li hover */
 li:hover {
   background-color: #0c1e38ae; /* Optional: background color change on hover */
+  width: 98%;
 }
 
