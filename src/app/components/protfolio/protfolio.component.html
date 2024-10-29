@@ -1,7 +1,6 @@
-<section id="portfolio" class="portfolio section">
+<section class="portfolio section" id="portfolio">
   <div class="container section-title">
     <h2>Portfolio</h2>
-    <mat-divider class="spertor"></mat-divider>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sequi
       commodi, dolore itaque corrupti officiis dolor aliquid facere dolorum,
@@ -11,52 +10,94 @@
   </div>
   <div class="container portfolio">
     <div class="isotope-layout col-lg-12 justify-content">
-      <ul class="portfolio-filters horizontal-list text-align-center justify-content">
-        <li (click)="onClickFilter('All')" [class.filter-active]="keyWord === 'All'">ALL</li>
-        <li (click)="onClickFilter('App')" [class.filter-active]="keyWord === 'App'">APP</li>
-        <li (click)="onClickFilter('PRODUCT')" [class.filter-active]="keyWord === 'PRODUCT'">PRODUCT</li>
+      <ul
+        class="portfolio-filters horizontal-list text-align-center justify-content"
+      >
+        <li
+          (click)="onClickFilter('All')"
+          [class.filter-active]="keyWord === 'All'"
+        >
+          ALL
+        </li>
+        <li
+          (click)="onClickFilter('App')"
+          [class.filter-active]="keyWord === 'App'"
+        >
+          APP
+        </li>
+        <li
+          (click)="onClickFilter('PRODUCT')"
+          [class.filter-active]="keyWord === 'PRODUCT'"
+        >
+          PRODUCT
+        </li>
       </ul>
     </div>
-
     <div class="row">
       <!-- Example item with 'App' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'App'}">
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'App' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
         <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
           <div class="portfolio-info">
             <h4>App Project</h4>
             <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
-              <mat-icon>link</mat-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Example item with 'PRODUCT' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'PRODUCT'}">
-        <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
-          <div class="portfolio-info">
-            <h4>Product Project</h4>
-            <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
               <mat-icon>link</mat-icon>
             </a>
           </div>
         </div>
       </div>
       <!-- Example item with 'PRODUCT' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'PRODUCT'}">
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'PRODUCT' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
         <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
           <div class="portfolio-info">
             <h4>Product Project</h4>
             <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
+              <mat-icon>link</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Example item with 'PRODUCT' category -->
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'PRODUCT' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
+        <div class="portfolio-content h-100">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
+          <div class="portfolio-info">
+            <h4>Product Project</h4>
+            <p>Lorem, ipsum dolor.</p>
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
               <mat-icon>link</mat-icon>
             </a>
           </div>
@@ -66,43 +107,69 @@
     <!-- Add other items similarly with their appropriate categories -->
     <div class="row">
       <!-- Example item with 'App' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'App'}">
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'App' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
         <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
           <div class="portfolio-info">
             <h4>App Project</h4>
             <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
-              <mat-icon>link</mat-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Example item with 'PRODUCT' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'PRODUCT'}">
-        <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
-          <div class="portfolio-info">
-            <h4>Product Project</h4>
-            <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
               <mat-icon>link</mat-icon>
             </a>
           </div>
         </div>
       </div>
       <!-- Example item with 'PRODUCT' category -->
-      <div class="col-lg-4 col-md-5 portfolio-item" 
-           [ngClass]="{'show': keyWord === 'All' || keyWord === 'Product'}">
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'PRODUCT' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
         <div class="portfolio-content h-100">
-          <img src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="img-thumbnail" alt="">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
           <div class="portfolio-info">
             <h4>Product Project</h4>
             <p>Lorem, ipsum dolor.</p>
-            <a href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg" class="glightbox preview-link">
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
+              <mat-icon>link</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Example item with 'PRODUCT' category -->
+      <div
+        [ngClass]="{ show: keyWord === 'All' || keyWord === 'Product' }"
+        class="col-lg-4 col-md-5 portfolio-item"
+      >
+        <div class="portfolio-content h-100">
+          <img
+            alt=""
+            class="img-thumbnail"
+            src="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+          />
+          <div class="portfolio-info">
+            <h4>Product Project</h4>
+            <p>Lorem, ipsum dolor.</p>
+            <a
+              class="glightbox preview-link"
+              href="https://builder.bootstrapmade.com/static/img/portfolio/app-1.jpg"
+            >
               <mat-icon>link</mat-icon>
             </a>
           </div>

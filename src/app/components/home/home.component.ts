@@ -7,15 +7,22 @@ import { ContactComponent } from "../contact/contact.component";
 import { ResumeComponent } from "../resume/resume.component";
 import { ProtfolioComponent } from "../protfolio/protfolio.component";
 import { SkillsComponent } from "../skills/skills.component";
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, HeaderComponent, HeroComponent, AboutComponent, ContactComponent, ResumeComponent, ProtfolioComponent, SkillsComponent],
+  imports: [NavbarComponent, HeaderComponent, HeroComponent, AboutComponent, ContactComponent, ResumeComponent, ProtfolioComponent, SkillsComponent,
+    MatIconModule,MatButtonModule,CommonModule
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  public isMenuVisible: boolean = false;
+  
   constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   @HostListener('window:scroll', [])
@@ -28,5 +35,8 @@ export class HomeComponent {
       }
     });
   }
-
+  toggleMenu() {
+    this.isMenuVisible = !this.isMenuVisible;
+    console.log(this.isMenuVisible);
+  }
 }

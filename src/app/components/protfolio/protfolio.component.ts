@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, Signal } from '@angular/core';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
@@ -12,9 +12,16 @@ import { CommonModule } from '@angular/common';
 })
 export class ProtfolioComponent {
   public keyWord = "All"
+  public isClickPhoto = signal(false);
 
 
   onClickFilter(keyWord:string){
     this.keyWord = keyWord;
   }
+
+  onClickPhoto():void{
+    this.isClickPhoto.set(true);
+  }
+  
+
 }

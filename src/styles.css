@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body{ height: 100%; width: 100%;scroll-behavior: smooth;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; display:flex; overflow-x: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; display:flex; }
 
 a {
     color: inherit; /* Keeps the text color the same as the parent element */
@@ -21,7 +21,14 @@ h3{
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  max-width: 80%; /* Limits the paragraph width to 80% of the viewport */
+  word-wrap: break-word; /* Ensures long words break to avoid overflow */
+  word-break: break-word; /* Safeguard for very long words */
+  white-space: normal; /* Allows text to wrap normally */
+  text-align: center;
 }
+
+
 
 .container{
   --bs-gutter-x: 1.5rem;
@@ -33,4 +40,18 @@ p {
   margin-left: auto;
 }
 
+
+h2::after {
+  content: ""; /* Required for ::after to display */
+  display: block; /* Ensures it's treated as a block element */
+  border-bottom: 5px solid #149ddd; /* Horizontal line under the h2 */
+  width: 50%; /* Adjusts the length of the border */
+  margin: 0 auto; /* Centers the border */
+  margin-top: 10px; /* Adds spacing between text and border */
+}
+
+h2{
+  text-align: center;
+  justify-content: center;
+}
 

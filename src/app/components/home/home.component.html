@@ -1,13 +1,20 @@
 <div class="app">
+        <button mat-mini-fab aria-label="Example icon button with a menu icon" (click)="toggleMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    
     <div class="app-header">
-        <app-header></app-header>
+        <app-header [isMenuVisible]="isMenuVisible"></app-header>
+        
     </div>
     <main>
         <app-hero id="home"></app-hero>
-        <app-about id="about" class="fade-in marg-left"></app-about>
-        <app-skills id="skills" class="fade-in marg-left"></app-skills>
-        <app-resume id="resume" class="fade-in marg-left"></app-resume>
-        <app-protfolio id="Protfolio" class="fade-in marg-left"></app-protfolio>
-        <app-contact id="Contact" class="fade-in marg-left"></app-contact>
+        <div class="section-border">
+            <app-about id="about" class="fade-in marg-left about"></app-about>
+            <app-skills id="skills" class="fade-in marg-left skills"></app-skills>
+            <app-resume id="resume" class="fade-in marg-left resume"></app-resume>
+            <app-protfolio id="Protfolio" class="fade-in marg-left protfolio"></app-protfolio>
+            <app-contact id="Contact" class="fade-in marg-left contact"></app-contact>
+        </div>
     </main>
 </div>

@@ -1,9 +1,3 @@
-.spertor {
-    width: 75px;
-    height: 10px;
-    border-color: #149ddd;
-    margin-left: 5px;
-}
 
 .resume .resume-title {
     color: #050d18;
@@ -37,8 +31,6 @@
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    color: 
-color-mix(in srgb, var(--default-color), transparent 20%);
     margin-bottom: 10px;
 }
 
@@ -50,10 +42,19 @@ color-mix(in srgb, var(--default-color), transparent 20%);
     margin-bottom: 10px;
 }
 
+
+.resume-container-title {
+    text-align: center; /* Centers content within this container */
+}
+
+.short-description p {
+    max-width: 80vw; /* Limits the width of the <p> to 80% of the viewport */
+    margin: 0 auto; /* Centers the <p> element */
+}
+
+
 @media (max-width: 991px) {
     .resume {
-        z-index: 1500;
-        transform: translateX(-25%);
-        width: calc(90vw ); /* Extend width to overlap header */
+        width: calc(100vw ); /* Extend width to overlap header */
     }
 }

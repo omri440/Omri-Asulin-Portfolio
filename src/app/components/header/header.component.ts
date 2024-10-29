@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,9 +12,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-   public isMenuVisible: boolean = false;
+   @Input() isMenuVisible!: boolean
 
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
+    console.log(this.isMenuVisible);
   }
 }

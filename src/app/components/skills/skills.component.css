@@ -53,8 +53,6 @@
 
 @media (max-width: 991px) {
     .section-title {
-        z-index: 1500;
-        transform: translateX(-40%);
-        width: calc(90vw ); /* Extend width to overlap header */
+        width: calc(100vw ); /* Extend width to overlap header */
     }
 }

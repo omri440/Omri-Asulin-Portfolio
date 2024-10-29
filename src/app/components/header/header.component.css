@@ -72,27 +72,28 @@
         display: none; /* Hide button on larger screens */
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px), (hover: none) and (pointer: coarse) {
     .app-header {
         transform: translateX(-100%);
         z-index: 1000;
+        width: 100vw;
+        top: 0;
     }
 
-    .menu-btn-container {
-        display:flex;
-        position: fixed;
+
+     button {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        position: relative;
+        left: calc(100vw - 10%);
         top: 20px;
-        right: 20px;
-        z-index: 1000;
-    }
-
-    .menu-btn-container button {
-        display: inline-block;
+        z-index: 1;
     }
 
     .app-header.show {
         width: 55%;
         transform: translateX(0);
-        max-width:213px;
+        max-width: 213px;
     }
 }

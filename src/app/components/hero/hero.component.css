@@ -1,52 +1,72 @@
-.hero{
-    left: 160px;
-    width: calc(100vw + 225px); /* Extend width to overlap header */
+/* Adjustments for the Hero Section */
+.hero {
+    width: 100vw; /* Full viewport width on mobile */
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     transition: left 0.3s ease;
-    &::before{
-        content: "";
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(255, 255, 255, 0.743);
-    }
 }
-.hero_content{
+
+.hero::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.743);
+}
+
+.hero_content {
     font-weight: 1000;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top:15%;
-    padding-right: 10%;
-    z-index: 1000;
-}
-.hero_content h1{
-    width: 45%;
-    font-size: 5rem;
-    line-height: 1.5;
-    color: #000;
-}
-.hero_content h2{
-    width: 45%;
-    color: #000;
-    font-size: 3rem;
+    padding: 15% 5%; /* Centered padding for mobile */
 }
 
-.hero_content h2 span{
-    width: 45%;
+/* Responsive Text Adjustments */
+.hero_content h1 {
+    width: 100%;
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.hero_content h2 {
+    width: 100%;
+    color: #000;
+    font-size: 1.8rem; /* Smaller font size for mobile */
+    text-align: center;
+    word-wrap: break-word;
+
+}
+
+.hero_content h2::after {
+    display: none;
+    
+}
+
+.hero_content h2 span {
     color: #3baef0;
-    font-size: 3rem;
+    font-size: 1.8rem; /* Adjusted for mobile */
 }
 
+/* Mobile-specific adjustments */
 @media (max-width: 991px) {
     .hero {
-        z-index: 1500;
-        transform: translateX(-20%);
-        width: calc(100vw + 225px); /* Extend width to overlap header */
+        width: 100vw;
+        left: 0; /* Align with mobile viewport */
+        background-position: 50% 50%; /* Center background image */
     }
+
+    .hero_content h1, .hero_content h2, .hero_content h2 span {
+        font-size: 2rem; /* Adjusted smaller font size */
+    }
+
+    
 }
